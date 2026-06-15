@@ -1,0 +1,211 @@
+.inputTask {
+    background: #dbe2ef;
+    border: solid 1px #b1b1b1;
+    min-height: 60px;
+    border-radius: 7px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 992px) {
+      min-height: 45px;
+    }
+
+    @media(max-width: 576px) {
+      min-height: 30px;
+    }
+
+    .inputTaskLabel {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 100%;
+      gap: 10px;
+      padding:  0px 0px 0px 10px;
+      overflow: hidden;
+
+      @media(max-width: 992px) {
+        padding:  0px 0px 0px px;
+      }
+
+      @media(max-width: 576px) {
+        padding:  0px 0px 0px 3px;
+        gap: 5px;
+      }
+
+
+      .inputTaskCheckbox {
+        display: none;
+      }
+
+      .inputTaskCheckbox + div {
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(135deg, white 0%, #d0e2fd 100%);
+        border: solid 1px #b1b1b1;
+        border-radius: 7px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        @media(max-width: 992px) {
+          width: 20px;
+          height: 20px;
+        }
+
+        @media(max-width: 576px) {
+          width: 15px;
+          height: 15px;
+          border-radius: 3px;
+        }
+
+        .inputTaskCheckmark {
+          width: 20px;
+          height: 20px;
+          animation: fadeIn 0.2s ease;
+
+          @media(max-width: 992px) {
+            width: 12px;
+            height: 12px;
+          }
+
+          @media(max-width: 576px) {
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+
+      .inputTaskTitle {
+        background: #95c0f84b;
+        border: solid 1px #3565A3;
+        border-radius: 7px;
+        padding: 5px;
+        cursor: initial;
+        outline: none;
+        width: 100%;
+
+        @media(max-width: 992px) {
+          font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 12px;
+        }
+
+        @media(max-width: 576px) {
+          padding: 0 3px;
+          border-radius: 3px;
+        }
+
+        @media(max-width: 425px) {
+          font-size: 10px;
+        }
+      }
+
+      .inputTaskTitleParagraph {
+
+        @media(max-width: 992px) {
+          font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 12px;
+        }
+
+        @media(max-width: 425px) {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .inputTaskBtnWrapper {
+        display: flex;
+        gap: 10px;
+
+        padding: 0 10px;
+
+        @media(max-width: 992px) {
+          padding: 0 5px;
+        }
+
+        @media(max-width: 576px) {
+          padding: 0 3px;
+        }
+
+        @media(max-width: 425px) {
+          gap: 3px;
+        }
+
+        .inputTaskBtn {
+          outline: none;
+
+          .inputTaskIcon {
+            width: 30px;
+            height: 30px;
+            animation: animateTaskIcon 0.2s ease forwards;
+
+            @media(max-width: 992px) {
+              width: 20px;
+              height: 20px;
+            }
+
+            @media(max-width: 576px) {
+              width: 15px;
+              height: 15px;
+            }
+          }
+
+          .inputTaskIconActive {
+            animation: animateTaskIconActive 0.2s ease forwards;
+          }
+
+          &:hover {
+            filter: brightness(70%);
+          }
+        }
+    }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+// ---------------------------------------------------
+@keyframes animateTaskIcon {
+  from {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    fill: rgb(53,101,163);
+  }
+}
+
+@keyframes animateTaskIconActive {
+  from {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    fill: rgba(253, 51, 51, 0.822);
+  }
+}
+// ---------------------------------------------------

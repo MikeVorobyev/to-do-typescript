@@ -1,0 +1,78 @@
+/* ===================================
+   CSS RESET + БАЗОВЫЕ СТИЛИ
+   =================================== */
+
+/* 1. Обнуление */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Убираем стандартные отступы у HTML */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Базовые стили для body */
+body {
+  min-height: 100vh;
+  min-height: 100dvh; /* Для мобильных */
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'sans-serif';
+  line-height: 1.5;
+  color: rgb(19, 37, 83);
+  overflow-x: hidden;
+}
+
+/* 4. Убираем стандартные стили у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Убираем стандартные стили у кнопок */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* 6. Убираем маркеры у списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 7. Сброс для изображений */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 8. Сброс для инпутов */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* ===================================
+   ГЛОБАЛЬНЫЕ УТИЛИТЫ (по желанию)
+   =================================== */
+
+/* Убираем выделение текста */
+.no-select {
+  user-select: none;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
