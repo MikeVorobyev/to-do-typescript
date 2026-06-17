@@ -5,7 +5,7 @@ interface TrashProps extends SVGProps<SVGSVGElement> {}
 const Trash = ({ className }: TrashProps) => {
     return (
         <svg className = {className} viewBox="0 0 443 467" xmlns="http://www.w3.org/2000/svg" width="443" height="467" fill="none">
-            <path fill="rgb(53,101,163)" fill-rule="evenodd" 
+            <path fill="rgb(53,101,163)" fillRule="evenodd" 
                 d="M153.121 64.3128C153.31 63.7901 153.64 62.8247 154.109 61.4162L154.112 61.4071L156.437 54.4326L156.437 54.4312C158.121 49.3784 
                 159.183 46.4306 159.622 45.5876C160.276 44.331 161.054 43.181 161.955 42.1377C162.861 41.0884 163.893 40.1468 165.049 39.3137C166.201 38.4826 167.417 
                 37.8034 168.694 37.2762C169.973 36.7482 171.314 36.3721 172.718 36.1479C173.656 35.9982 176.789 35.9231 182.115 35.9231L260.882 35.9231C266.209 35.9231 

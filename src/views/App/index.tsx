@@ -6,8 +6,6 @@ import InputTask from '../components/InputTask';
 
 const App = () => {
     const { tasks, createTask, updateTask, removeTask, isDoneTask } = useToDoStore()
- 
-    console.log(tasks)
     return (
         <article className={styles.article}>
             <h1 className={styles.articleTitle}>To Do</h1>
